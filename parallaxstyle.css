@@ -1,0 +1,28 @@
+.parallax-container {
+    width: 100%;
+    height: 100vh; /* Esto hace que el contenedor ocupe toda la altura de la ventana */
+    position: relative;
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+/* La capa con el SVG */
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+/* El SVG */
+svg {
+    display: block;
+    width: 100%; /* El SVG tomará el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción del SVG */
+    position: absolute;
+    bottom: 0; /* Lo coloca en la parte inferior */
+    left: 0; /* Alinea a la izquierda */
+    z-index: 3;
+    transform: scale(1); /* Controla el tamaño, puede ajustarse si es necesario */
+}
