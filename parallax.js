@@ -3,23 +3,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 window.addEventListener("DOMContentLoaded", () => {
 
-  // 1) Background radial
-  gsap.fromTo(
-    "body",
-    { backgroundPosition: "center bottom" },
-    {
-      backgroundPosition: "center top",
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".scene-moon",
-        start:   "top top",
-        endTrigger: ".scene-mountains",
-        end:     "bottom top",
-        scrub:   true
-      }
-    }
-  );
-
   // 2) Posiciones iniciales de montañas…
   const lejanas  = document.getElementById("montaña_lejana");
   const media1   = document.getElementById("montaña_media_1");

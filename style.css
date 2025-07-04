@@ -1,19 +1,21 @@
+html{
+  min-height: 100%;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100%;
     margin: 0;
     padding: 0;
-    background: radial-gradient(ellipse at bottom,#1b2735 0%,#090a0f 100%
-    );
-    background-repeat: no-repeat;
-    /* Damos al gradiente altura suficiente para ambas escenas (200% de la ventana) */
-    background-size: 100% 200%;
-    /* Arranca en la parte superior */
-    background-position: center top;
-    background-attachment: fixed;
+    
     font-family: 'Arial', sans-serif;
     text-align: center;
 
