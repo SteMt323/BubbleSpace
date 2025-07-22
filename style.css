@@ -5,6 +5,7 @@ html{
   background-size: 100% 200%;
   background-position: center top;
   background-attachment: fixed;
+  scrollbar-width: thin;
 }
 
 body {
@@ -37,6 +38,7 @@ body {
   aspect-ratio: 1 / 1;
   transform-origin: center center;
   will-change: transform;
+  z-index: 2;
 }
 
 .moon {
@@ -52,6 +54,7 @@ body {
   animation: moon-twinkle 2.5s ease-in-out infinite;
   transform-origin: center center;    
   will-change: transform;
+  z-index: 2;
 }
 
 
@@ -92,7 +95,7 @@ body {
   max-width: 800px;
   margin: auto;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 2;
 }
 
 /* MESSAGE LOVE */
