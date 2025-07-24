@@ -1,3 +1,33 @@
+/* TextScramble Effect */
+.container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 120;
+  pointer-events: none;
+}
+.text {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 100;
+  font-size: 3.5vw;
+  color: #FAFAFA;
+  text-align: center;
+  z-index: 121;
+  width: 100vw;
+  pointer-events: none;
+  text-shadow:
+    0 2px 8px #000,
+    0 0px 24px #000,
+    0 0px 2px #000;
+}
+.dud {
+  color: #757575;
+}
 html{
   min-height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
