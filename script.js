@@ -14,8 +14,6 @@ const messages = [
         "If only you could see you through my eyes",
         "I think we could do it if we tried if only say, youre mine",
         "Do you wanna do the things that I wanna do with you?",
-        "You know that I adore you",
-        "Are you gonna marry, kiss or kill me?"
     ];
 
 

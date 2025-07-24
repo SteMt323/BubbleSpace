@@ -95,7 +95,10 @@ window.addEventListener("DOMContentLoaded", () => {
     "Heaven is a place on earth with you.",
     "I just love the way you are.",
     "<3<3<3",
-    "I want you, you want me?"
+    "I want you, you want me?",
+    "Are you gonna marry, kiss or kill me?",
+    "<3<3",
+    "You know that I adore you."
   ];
   const textEl = document.querySelector('.text');
   const fx = new TextScramble(textEl);
