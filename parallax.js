@@ -60,15 +60,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 window.addEventListener("DOMContentLoaded", () => {
 
-  const lejanas  = document.getElementById("montaña_lejana");
-  const media1   = document.getElementById("montaña_media_1");
-  const media2   = document.getElementById("montaña_media_2");
-  const cercanas = document.getElementById("montaña_cercana");
+  const lejanas  = document.getElementById("montana1");
+  const media1   = document.getElementById("montana2");
+  const media2   = document.getElementById("montana3");
+  const media3 = document.getElementById("montana4");
+  const cercanas = document.getElementById("montana5");
 
   gsap.set(lejanas,  { x: -500, y: 1200 });
   gsap.set(cercanas, { x:    0, y: 1200 });
-  gsap.set(media1,   { x:  500, y: 1200 });
+  gsap.set(media1,   { x:  -800, y: 1200 });
   gsap.set(media2,   { x:  800, y: 1200 });
+  gsap.set(media3,   { x:  -500, y: 1200 });
 
   gsap.timeline({
     scrollTrigger: {
@@ -98,7 +100,8 @@ window.addEventListener("DOMContentLoaded", () => {
     "I want you, you want me?",
     "Are you gonna marry, kiss or kill me?",
     "<3<3",
-    "You know that I adore you."
+    "You know that I adore you.",
+    "I love you Fran..."
   ];
   const textEl = document.querySelector('.text');
   const fx = new TextScramble(textEl);
@@ -130,10 +133,11 @@ window.addEventListener("DOMContentLoaded", () => {
     trigger: document.body,
     start:   "bottom bottom",
     onEnter: () => {
-      gsap.to(lejanas,  { x: 0, y: 160, duration: 2.2,   ease: "power1.out"});
-      gsap.to(media1,   { x: 0, y: 220, duration: 2, ease: "power1.out"});
-      gsap.to(media2,   { x: 0, y: 180, duration: 1.6, ease: "power1.out"});
-      gsap.to(cercanas, { x: 0, y: 200, duration: 1.7, ease: "power1.out"});
+      gsap.to(lejanas,  { x: 0, y: 150, duration: 2.2,   ease: "power1.out"});
+      gsap.to(media1,   { x: 0, y: 170, duration: 2.4, ease: "power1.out"});
+      gsap.to(media2,   { x: 0, y: 130, duration: 1.8, ease: "power1.out"});
+      gsap.to(media3,   { x: 0, y: 130, duration: 1.5, ease: "power1.out"});
+      gsap.to(cercanas, { x: 0, y: 150, duration: 1.7, ease: "power1.out"});
       gsap.to(".moon-wrapper", {
         scale:    3,
         y: 300,
@@ -146,9 +150,10 @@ window.addEventListener("DOMContentLoaded", () => {
       }, 900); // Ajusta el delay si lo deseas
     },
     onLeaveBack: () => {
-      gsap.to(lejanas,  { x: -500, y: 1200, duration: 2.2,   ease: "power1.out"});
-      gsap.to(media1,   { x:  500, y: 1200, duration: 2, ease: "power1.out"});
+      gsap.to(lejanas,  { x: -500, y: 1200, duration: 2,   ease: "power1.out"});
+      gsap.to(media1,   { x:  -800, y: 1200, duration: 2, ease: "power1.out"});
       gsap.to(media2,   { x:  800, y: 1200, duration: 1.6, ease: "power1.out"});
+      gsap.to(media3,   { x:  -500, y: 1200, duration: 2, ease: "power1.out"});
       gsap.to(cercanas, { x:    0, y: 1200, duration: 1.7, ease: "power1.out"});
       gsap.to(".moon-wrapper", {
         scale:    1,
